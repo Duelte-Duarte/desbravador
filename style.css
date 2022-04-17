@@ -45,6 +45,13 @@ ul, li, a {
     }
 }
 
+@media (max-width: 410px) {
+    ul, li, a {
+        padding: 0px 5px;
+        font-size: .9em;
+    }
+}
+
 a:hover {
     font-size: 1.3em;
 }
@@ -183,6 +190,13 @@ section#segundo {
     .img1 img {
         width: 160px;
         height: 160px;
+    }    
+}
+
+@media (max-width: 410px) {
+    .img1 img {
+        width: 140px;
+        height: 140px;
     }    
 }
 
