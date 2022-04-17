@@ -276,6 +276,40 @@ footer {
     margin: auto;
 }
 
+.video {
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
+    .video > video {
+        width: 1000px;
+        height: 700px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .video > video {
+        width: 700px;
+        height: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    .video > video {
+        width: 500px;
+        height: 700px;
+    }
+}
+
+@media (max-width: 500px) {
+    .video > video {
+        width: 400px;
+        height: 700px;
+    }
+}
+
 footer > div {
     display: flex;
     margin: auto;
