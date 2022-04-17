@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #191917;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+a > img {
+    width: 80px;
+    height: 80px;
+    padding-left: 20px;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    padding: 0 20px 0 20px;
+    color: white;
+    align-items: center;
+}
+
+a:hover {
+    font-size: 1.3em;
+}
+
+#caixa {
+    box-shadow: 0px 0px 5px #FF0A5F;
+    border-radius: 5px;
+    padding: 7px 0px;
+}
+
+#caixa:hover {
+    background-color: #FF0A5F;
+}
+
+.menu {
+    display: flex;
+}
+
+section {
+    height: 95vh;
+}
+
+section#abertura {
+    background-image: url(imagem/abertura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.txt1 {
+    color: #FCEB23;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: 3em;
+    padding-top: 10vh;
+    text-shadow: 3px 3px 5px black;
+    text-align: center;
+}
+
+section#segundo {
+    height: 100vh;
+    background-color: #191917;
+    color: #FCEB23;
+}
+
+.titulo {
+    text-align: center;
+    padding: 50px;
+    font-size: 3em;
+    color: #FCEB23;
+}
+
+.box-1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card-box1 {
+    box-shadow: 0px 0px 7px black;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 0px 15px 15px 0px;
+    margin: 10px;
+    flex: 1 1 300px;
+}
+
+.card-box1 > p {
+    color: white;
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+#terceiro {
+    height: 100vh;
+    background-color: #FFDF3E;
+}
+
+.titulo2 {
+    text-align: center;
+    padding: 50px;
+    font-size: 3em;
+}
+
+.box-2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.img1 {
+    background-color: #3f2318;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#quarto {
+    height: 100vh;
+    background-color: #1E1E1E;
+}
+
+.swiper-slide {
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#cinco {
+    height: 100vh;
+}
+
+section#cinco {
+    background-image: url(imagem/logo\ clube.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img2 {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    right: 30px;
+}
+
+.img2 > a > img {
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.img2 > a > img:hover {
+    width: 320px;
+    height: 320px;
+    box-shadow: 0px 0px 3px #FF0A5F;
+}
+
+footer {
+    height: 30vh;
+    background-color: #FFDF3E;
+    margin: auto;
+}
+
+footer > div {
+    display: flex;
+    margin: auto;
+    max-width: 800px;
+
+}
+
+footer > div > a {
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.inst {
+    background-color: #F6E65C;
+    padding: 99px;
+}
+
+.wap {
+    background-color: #FCD617;
+    padding: 99px;
+}
