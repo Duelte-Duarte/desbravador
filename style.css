@@ -201,8 +201,20 @@ section#segundo {
 }
 
 #quarto {
-    height: 100vh;
+    height: 250vh;
     background-color: #1E1E1E;
+}
+
+@media (max-width: 959px) {
+    #quarto {
+        height: 280vh;
+    }
+}
+
+@media (max-width: 611px) {
+    #quarto {
+        height: 370vh;
+    }
 }
 
 .swiper-slide {
@@ -374,5 +386,30 @@ footer > div > a {
 @media (max-width: 530px) {
     .inst, .wap {
         padding: 50px;
+    }
+}
+
+.campo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1200px;
+    padding-top: 20px;
+}
+
+#unico {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+.campo > div {
+    padding: 10px;
+    margin: auto;
+}
+
+@media (max-width: 650px) {
+    .campo > div {
+        padding: 3px;
     }
 }
