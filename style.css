@@ -201,13 +201,13 @@ section#segundo {
 }
 
 #quarto {
-    height: 250vh;
+    height: 200vh;
     background-color: #1E1E1E;
 }
 
 @media (max-width: 959px) {
     #quarto {
-        height: 280vh;
+        height: 250vh;
     }
 }
 
