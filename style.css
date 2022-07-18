@@ -205,6 +205,24 @@ section#segundo {
     background-color: #1E1E1E;
 }
 
+@media (max-width: 720px) {
+    #quarto {
+        height: 120vh;
+    }
+}
+
+@media (max-width: 620px) {
+    #quarto {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 520px) {
+    #quarto {
+        height: 80vh;
+    }
+}
+
 .swiper-slide {
     margin: auto;
     text-align: center;
