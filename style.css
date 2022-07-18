@@ -188,6 +188,24 @@ section#segundo {
     background-color: #FFDF3E;
 }
 
+@media (max-width: 893px) {
+    #terceiro {
+        height: 150vh;
+    }
+}
+
+@media (max-width: 801px) {
+    #terceiro {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 569px) {
+    #terceiro {
+        height: 130vh;
+    }
+}
+
 .titulo2 {
     text-align: center;
     padding: 50px;
@@ -364,22 +382,22 @@ footer {
 
 @media (max-width: 1300px) {
     .video > video {
-        width: 1000px;
-        height: 700px;
+        width: 800px;
+        height: 400px;
     }
 }
 
 @media (max-width: 1000px) {
     .video > video {
         width: 700px;
-        height: 700px;
+        height: 400px;
     }
 }
 
 @media (max-width: 700px) {
     .video > video {
         width: 500px;
-        height: 700px;
+        height: 400px;
     }
 }
 
