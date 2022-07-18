@@ -201,20 +201,8 @@ section#segundo {
 }
 
 #quarto {
-    height: 200vh;
+    height: 160vh;
     background-color: #1E1E1E;
-}
-
-@media (max-width: 959px) {
-    #quarto {
-        height: 250vh;
-    }
-}
-
-@media (max-width: 611px) {
-    #quarto {
-        height: 300vh;
-    }
 }
 
 .swiper-slide {
