@@ -97,6 +97,36 @@ section#segundo {
     color: #FCEB23;
 }
 
+@media (max-width: 1014px) {
+    section#segundo {
+        height: 110vh;
+    }
+}
+
+@media (max-width: 829px) {
+    section#segundo {
+        height: 120vh;
+    }
+}
+
+@media (max-width: 810px) {
+    section#segundo {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 506px) {
+    section#segundo {
+        height: 120vh;
+    }
+}
+
+@media (max-width: 480px) {
+    section#segundo {
+        height: 140vh;
+    }
+}
+
 .titulo {
     text-align: center;
     padding: 50px;
