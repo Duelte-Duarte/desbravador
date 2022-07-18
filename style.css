@@ -388,28 +388,3 @@ footer > div > a {
         padding: 50px;
     }
 }
-
-.campo {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: 1200px;
-    padding-top: 20px;
-}
-
-#unico {
-    display: block;
-    width: 300px;
-    height: 300px;
-}
-
-.campo > div {
-    padding: 10px;
-    margin: auto;
-}
-
-@media (max-width: 650px) {
-    .campo > div {
-        padding: 3px;
-    }
-}
