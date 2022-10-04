@@ -7,24 +7,23 @@
     <title>Defensores do Cerrado</title>
     <link rel="icon" type="image/x-icon" href="imagem/favicon.ico"/>
     <link rel="stylesheet" href="style.css">
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   </head>
-  <body>
+  <body onresize="mudartamanho()">
     <header>
-        <a href="#"><img src="imagem/logo clube 4.png" alt=""></a>
-      <nav>
-        <ul class="menu">
+      <img src="imagem/logo clube 4.ico" alt="">
+      <span id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
+
+      <menu id="itens">
+        <ul>
             <li><a href="#segundo">Como funciona</a></li>
             <li><a href="#terceiro">O que o Desbravador aprende</a></li>
             <li><a href="quemsomos.html">Dúvidas frequentes</a></li>
             <li id="caixa"><a href="paginscricao.html">Seja um Desbravador</a></li>
         </ul>
-      </nav>
+      </menu>
     </header>
 
     <main>
@@ -189,10 +188,13 @@
     <footer>
       <div>
         <div class="inst">
-          <a href="https://www.instagram.com/defensores.docerrado/" target="_blank"><img src="imagem/Instagram_icon.png" alt=""></a>
+          <a href="https://www.instagram.com/defensores.docerrado/" target="_blank"><img src="imagem/insta.png" alt=""></a>
         </div>
         <div class="wap">
           <a href="https://wa.me/message/X76UEB274D77E1" target="_blank"><img src="imagem/icon-whatsApp.png" alt=""></a>
+        </div>
+        <div class="you">
+          <a href="https://www.youtube.com/channel/UCkxQUDE3DlNxu3oNidlvlvg" target="_blank"><img src="imagem/youtube_icon.png" alt=""></a>
         </div>
       </div>
     </footer>
@@ -215,6 +217,22 @@
           el: ".swiper-pagination",
         },
       });
+
+      function clickmenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudartamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
     </script>
   </body>
 </html>

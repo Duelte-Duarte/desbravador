@@ -3,10 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* cores
+preto: #191917
+amarelo: #FCEB23
+vermelho: #FF0A5F
+marrom: #3f2318
+*/
 
 header {
     background-color: #191917;
@@ -16,50 +23,46 @@ header {
     align-items: center;
 }
 
-a > img {
-    width: 80px;
-    height: 80px;
-    padding-left: 20px;
+menu#itens {
+    display: none;
 }
 
-@media (max-width: 677px) {
-    a > img {
-        width: 50px;
-        height: 50px;
-        padding-left: 5px;
-    }
+header > img {
+    width: 80px;
+    height: 80px;
+}
+
+span#burguer {
+    color: white;
+    display: block;
+}
+
+span#burguer:hover {
+    border: 2px solid #FF0A5F;
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+menu ul {
+    list-style-type: none;
 }
 
 ul, li, a {
-    list-style: none;
     text-decoration: none;
-    display: block;
-    padding: 0 20px 0 20px;
+    display: flex;
+    padding: 10px;
     color: white;
     align-items: center;
 }
 
-@media (max-width: 677px) {
-    ul, li, a {
-        padding: 0px 5px;
-    }
-}
-
-@media (max-width: 410px) {
-    ul, li, a {
-        padding: 0px 5px;
-        font-size: .9em;
-    }
-}
-
 a:hover {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #caixa {
     box-shadow: 0px 0px 5px #FF0A5F;
     border-radius: 5px;
-    padding: 7px 0px;
 }
 
 #caixa:hover {
@@ -67,11 +70,11 @@ a:hover {
 }
 
 .menu {
-    display: flex;
+    display: block;
 }
 
-section {
-    height: 95vh;
+section#abertura {
+    height: 90vh;
 }
 
 section#abertura {
@@ -86,65 +89,26 @@ section#abertura {
     font-family: 'Bebas Neue';
     font-weight: bold;
     font-size: 3em;
-    padding-top: 10vh;
+    padding-top: 30px;
     text-shadow: 3px 3px 5px black;
     text-align: center;
 }
 
 section#segundo {
-    height: 100vh;
     background-color: #191917;
     color: #FCEB23;
 }
 
-@media (max-width: 1014px) {
-    section#segundo {
-        height: 110vh;
-    }
-}
-
-@media (max-width: 829px) {
-    section#segundo {
-        height: 120vh;
-    }
-}
-
-@media (max-width: 810px) {
-    section#segundo {
-        height: 100vh;
-    }
-}
-
-@media (max-width: 506px) {
-    section#segundo {
-        height: 120vh;
-    }
-}
-
-@media (max-width: 480px) {
-    section#segundo {
-        height: 140vh;
-    }
-}
-
 .titulo {
     text-align: center;
-    padding: 50px;
-    font-size: 3em;
+    font-size: 2em;
+    padding-top: 30px;
     color: #FCEB23;
-}
-
-@media (max-width: 810px) {
-    .titulo {
-        padding: 10px;
-        font-size: 2em;
-    }
 }
 
 .box-1 {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
@@ -155,26 +119,6 @@ section#segundo {
     background-color: #1E1E1E;
     border-radius: 0px 15px 15px 0px;
     margin: 10px;
-    flex: 1 1 300px;
-}
-
-@media (max-width: 810px) {
-    .card-box1, p {
-        padding: 10px;
-        margin: 0;
-        flex: 1 1 200px;
-        line-height: 10px;
-    }
-}
-
-@media (max-width: 410px) {
-    .card-box1, p {
-        padding: 10px;
-        margin: 0;
-        font-size: .9em;
-        flex: 1 1 100px;
-        line-height: 10px;
-    }
 }
 
 .card-box1 > p {
@@ -184,45 +128,21 @@ section#segundo {
 }
 
 #terceiro {
-    height: 100vh;
     background-color: #FFDF3E;
-}
-
-@media (max-width: 893px) {
-    #terceiro {
-        height: 150vh;
-    }
-}
-
-@media (max-width: 801px) {
-    #terceiro {
-        height: 100vh;
-    }
-}
-
-@media (max-width: 569px) {
-    #terceiro {
-        height: 130vh;
-    }
 }
 
 .titulo2 {
     text-align: center;
-    padding: 50px;
-    font-size: 3em;
-}
-
-@media (max-width: 800px) {
-    .titulo2 {
-        padding: 20px;
-        font-size: 2em;
-    }    
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 3px 3px 5px white;
+    padding: 20px;
 }
 
 .box-2 {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
     margin: auto;
     padding: 20px;
     text-align: center;
@@ -234,41 +154,13 @@ section#segundo {
     border-radius: 10px;
 }
 
-@media (max-width: 800px) {
-    .img1 img {
-        width: 160px;
-        height: 160px;
-    }    
-}
-
-@media (max-width: 410px) {
-    .img1 img {
-        width: 140px;
-        height: 140px;
-    }    
+.img1 img {
+    width: 140px;
+    height: 140px;
 }
 
 #quarto {
-    height: 160vh;
     background-color: #1E1E1E;
-}
-
-@media (max-width: 720px) {
-    #quarto {
-        height: 120vh;
-    }
-}
-
-@media (max-width: 620px) {
-    #quarto {
-        height: 100vh;
-    }
-}
-
-@media (max-width: 520px) {
-    #quarto {
-        height: 80vh;
-    }
 }
 
 .swiper-slide {
@@ -277,101 +169,44 @@ section#segundo {
     margin-top: 30px;
 }
 
-@media (max-width: 720px) {
-    .card-box > img {
-        width: 600px;
-        height: 600px;
-    }
-}
-
-@media (max-width: 620px) {
-    .card-box > img {
-        width: 500px;
-        height: 500px;
-    }
-}
-
-@media (max-width: 520px) {
-    .card-box > img {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-#cinco {
-    height: 100vh;
+.card-box > img {
+    width: 400px;
+    height: 400px;
 }
 
 section#cinco {
-    background-image: url(imagem/logo\ clube.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.box-3 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.img2 {
-    margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    right: 30px;
-}
-
-@media (max-width: 800px) {
-    .img2 {
-        margin: 20px;
-        right: 30px;
-        grid-template-columns: repeat(1, 1fr);
-    }
+    background-color: #FCEB23;
 }
 
 #cinco > .titulo {
-    text-align: right; 
-    margin-right: 200px; 
-    text-shadow: 0px 0px 3px black;
+    text-shadow: 0px 0px 3px white;
+    color: #1E1E1E;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: 2em;
 }
 
-@media (max-width: 800px) {
-    #cinco > .titulo {
-        margin-right: 50px;
-    }    
+.img2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
 }
 
 .img2 > a > img {
-    padding: 20px;
-    width: 300px;
-    height: 300px;
-}
-
-@media (max-width: 800px) {
-    .img2 > a > img {
-        padding: 10px;
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media (max-width: 400px) {
-    .img2 > a > img {
-        padding: 10px;
-        width: 150px;
-        height: 150px;
-    }
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .img2 > a > img:hover {
-    width: 320px;
-    height: 320px;
+    width: 200px;
+    height: 200px;
     box-shadow: 0px 0px 3px #FF0A5F;
 }
 
 footer {
     background-color: #FFDF3E;
-    margin: auto;
 }
 
 .video {
@@ -380,65 +215,45 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 1300px) {
-    .video > video {
-        width: 800px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .video > video {
-        width: 700px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 700px) {
-    .video > video {
-        width: 500px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 500px) {
-    .video > video {
-        width: 400px;
-        height: 700px;
-    }
-}
-
-@media (max-width: 400px) {
-    .video > video {
-        width: 350px;
-        height: 700px;
-    }
+.video > video {
+    width: 100%;
+    height: 500px;
 }
 
 footer > div {
     display: flex;
-    margin: auto;
-    max-width: 800px;
+    justify-content: center;
 }
 
-footer > div > a {
-    margin: auto;
-    display: flex;
-    position: relative;
-}
-
-.inst {
+.inst > a > img {
+    width: 80px;
+    height: 80px;
+    padding: 30px;
     background-color: #F6E65C;
-    padding: 99px;
 }
 
-.wap {
+.inst > a > img:hover {
+    border: 2px solid #FF0A5F;
+}
+
+.wap > a > img {
+    width: 80px;
+    height: 80px;
+    padding: 30px;
     background-color: #FCD617;
-    padding: 99px;
 }
 
-@media (max-width: 530px) {
-    .inst, .wap {
-        padding: 50px;
-    }
+.wap > a > img:hover {
+    border: 2px solid #FF0A5F;
+}
+
+.you > a > img {
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+    background-color: #ffe924;
+}
+
+.you > a > img:hover {
+    border: 2px solid #FF0A5F;
 }
