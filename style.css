@@ -188,20 +188,19 @@ section#cinco {
 
 .img2 {
     display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    padding-left: 10%;
 }
 
 .img2 > a > img {
-    padding: 10px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
 .img2 > a > img:hover {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     box-shadow: 0px 0px 3px #FF0A5F;
 }
 
@@ -223,12 +222,13 @@ footer {
 footer > div {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .inst > a > img {
     width: 80px;
     height: 80px;
-    padding: 30px;
+    padding: 20px;
     background-color: #F6E65C;
 }
 
@@ -239,7 +239,7 @@ footer > div {
 .wap > a > img {
     width: 80px;
     height: 80px;
-    padding: 30px;
+    padding: 20px;
     background-color: #FCD617;
 }
 
@@ -250,7 +250,7 @@ footer > div {
 .you > a > img {
     width: 80px;
     height: 80px;
-    padding: 30px;
+    padding: 20px;
     background-color: #ffe924;
 }
 
