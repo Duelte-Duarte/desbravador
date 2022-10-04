@@ -229,32 +229,38 @@ footer > div {
 .inst > a > img {
     width: 80px;
     height: 80px;
-    padding: 20px;
-    background-color: #F6E65C;
+    padding: 5px;
 }
 
 .inst > a > img:hover {
     border: 2px solid #FF0A5F;
+    width: 90px;
+    height: 90px;
+    border-radius: 25%;
 }
 
 .wap > a > img {
     width: 80px;
     height: 80px;
-    padding: 20px;
-    background-color: #FCD617;
+    padding: 5px;
 }
 
 .wap > a > img:hover {
     border: 2px solid #FF0A5F;
+    width: 90px;
+    height: 90px;
+    border-radius: 25%;
 }
 
 .you > a > img {
     width: 80px;
     height: 80px;
-    padding: 20px;
-    background-color: #ffe924;
+    padding: 5px;
 }
 
 .you > a > img:hover {
     border: 2px solid #FF0A5F;
+    width: 90px;
+    height: 90px;
+    border-radius: 25%;
 }
