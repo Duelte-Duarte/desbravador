@@ -46,7 +46,7 @@ grandes telas = acima de 1200px
         margin: auto;
     }
     .card-box > img {
-        width: 800px;
+        width: 700px;
         height: 700px;
     }
     .inst > a {
@@ -98,8 +98,8 @@ grandes telas = acima de 1200px
         padding: 10px;
     }
     .card-box > img {
-        width: 900px;
-        height: 700px;
+        width: 1000px;
+        height: 1000px;
     }
     .box-3 {
         width: 992px;
