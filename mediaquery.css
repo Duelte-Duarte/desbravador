@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* 
+pequenas telas = aé 600px
+celular = de 600x até 768px
+tablet = 768px até 992px 
+desktop = 992px até 1200px
+grandes telas = acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    span#burguer {
+        display: none;
+    }
+    menu#itens {
+        display: flex;
+    }
+    header, img, menu#itens{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    header {
+        box-shadow: 2px 2px 15px black;
+    }
+    main {
+        width: 768px;
+        margin: auto;
+    }
+    .card-box1 {
+        width: 200px;
+        margin: top;
+        padding: 10px;
+    }
+    .img1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img1 > img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        padding: 10px;
+    }
+    .card-box > img{
+        margin: auto;
+    }
+    .inst > a {
+        padding-right: 50px;
+    }
+    .wap > a {
+        padding-right: 50px;
+    }
+    .you > a {
+        padding-right: 50px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    span#burguer {
+        display: none;
+    }
+    menu#itens {
+        display: flex;
+    }
+    header, img, menu#itens{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    header {
+        box-shadow: 2px 2px 15px black;
+    }
+    .box-1 {
+        width: 992px;
+        margin: auto;
+    }
+    .card-box1 {
+        width: 250px;
+    }
+    .img1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-2 {
+        width: 992px;
+        margin: auto;
+    }
+    .img1 > img {
+        width: 200px;
+        height: 200px   ;
+        margin: auto;
+        padding: 10px;
+    }
+    .box-3 {
+        width: 992px;
+        margin: auto;
+    }
+    .card-box > img{
+        margin: auto;
+    }
+    .video {
+        width: 992px;
+        margin: auto;
+    }
+    .inst > a {
+        padding-right: 100px;
+    }
+    .wap > a {
+        padding-right: 100px;
+    }
+    .you > a {
+        padding-right: 100px;
+    }
+}
